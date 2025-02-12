@@ -1,0 +1,87 @@
+// If you want to override variables do it here
+@import 'variables';
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import CoreUI for React components library
+@import '@coreui/coreui/scss/coreui';
+
+// Import Chart.js custom tooltips styles
+// @import '@coreui/chartjs/scss/coreui-chartjs';
+
+@import 'layout';
+@import 'example';
+
+// If you want to add custom CSS you can put it here.
+@import 'custom';
+
+@import '@syncfusion/ej2-base/styles/material.css';
+@import '@syncfusion/ej2-buttons/styles/material.css';
+@import '@syncfusion/ej2-calendars/styles/material.css';
+@import '@syncfusion/ej2-dropdowns/styles/material.css';
+@import '@syncfusion/ej2-inputs/styles/material.css';
+@import '@syncfusion/ej2-navigations/styles/material.css';
+@import '@syncfusion/ej2-popups/styles/material.css';
+@import '@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '@syncfusion/ej2-react-grids/styles/material.css';
+// @import '@react-calendar/dist/Calendar.css';
+
+
+// over-riding syncfusion styles
+.e-dialog {
+    height: 70% !important;
+    max-width: 70% !important;
+}
+
+.e-pager .e-currentitem, .e-pager .e-currentitem:hover {
+    background: #3c4b64 !important;
+}
+
+.e-btn.e-flat.e-primary, .e-css.e-btn.e-flat.e-primary {
+    color: #3c4b64 !important;
+}
+
+.e-btn.e-flat.e-primary:hover, .e-css.e-btn.e-flat.e-primary:hover {
+    color: white !important;
+    background: rgb(58,65,78) !important;
+}
+
+.e-btn.e-flat.e-primary:active, .e-btn.e-flat.e-primary.e-active, .e-css.e-btn.e-flat.e-primary:active, .e-css.e-btn.e-flat.e-primary.e-active {
+    color: white !important;
+    background: rgb(58,65,78) !important;
+}
+
+.e-btn.e-flat.e-primary:focus, .e-css.e-btn.e-flat.e-primary:focus {
+    background: rgb(58,65,78) !important;
+    color: white !important;
+}
+
+.e-input-focus.e-valid-input {
+    border-color: #3c4b64 !important;
+}
+
+.e-dialog .e-dlg-header {
+    margin-left: 2%;
+    font-weight: 500;
+}
+
+// over-riding bootstrap styles
+.card-header {
+    font-weight: 600;
+}
+
+// dashboard
+.dash_sub_header {
+    border: #3c4b64 1px solid;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.dash_sub_detail {
+    border: #3c4b64 1px solid;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
