@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/shaimai/.docker/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/shaimai/.docker/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+
+npm manifest: 
+  {
+    "name": "be",
+    "version": "1.0.0",
+    "description": "Backend for Interview Tracker",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server",
+      "server": "nodemon server"
+    },
+    "author": "Kunal / Taimoor",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "config": "^3.3.9",
+      "cors": "^2.8.5",
+      "dotenv": "^16.3.1",
+      "express": "^4.18.3",
+      "express-validator": "^7.0.1",
+      "jsonwebtoken": "^9.0.1",
+      "mongoose": "^7.3.3"
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.0",
+      "nodemon": "^3.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
